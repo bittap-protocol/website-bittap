@@ -6,7 +6,7 @@ import Page from "pages/Page";
 
 const ProjectRoutes = () => {
   let element = useRoutes([
-    { path: "/", element: <Home /> },
+    { path: "/", element: <Page /> },
     { path: "*", element: <NotFound /> },
     {
       path: "page",
