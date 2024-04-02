@@ -51,7 +51,7 @@ export default function PagePage() {
                     </Heading>
                     <Heading size="lg" as="span" color="gray.600">
                       <>
-                        Taproot Asset protocol Wallet
+                        Taproot Assets protocol Wallet
                         <br />
                       </>
                     </Heading>
@@ -137,7 +137,7 @@ export default function PagePage() {
                   <Image src="images/img_home_desc_5_5d96579_png.png" w="60px" />
                   <Flex>
                     <Text textAlign="center" fontSize="13.13px">
-                      Taproot Asset
+                      Taproot Assets
                     </Text>
                   </Flex>
                 </Flex>
