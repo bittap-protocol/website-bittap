@@ -9,7 +9,7 @@ export default function PagePage() {
         <title>Bittap</title>
         <meta name="description" content="Web site created using create-react-app" />
       </Helmet>
-      <Box bg="white.A700_01" w="100%">
+      <Box bg="white.A700_01" w="100%" mx="0px auto">
         <Box bg="white.A700_01">
           <Flex
             pb={{ base: "20px", sm: "22px" }}
@@ -34,7 +34,7 @@ export default function PagePage() {
               w="100%"
               gap="20px"
               px="12px"
-              mx="auto"
+              mx="0px auto"
               flexDirection={{ md: "row", base: "column" }}
               p={{ md: "", base: "20px" }}
             >
@@ -44,12 +44,12 @@ export default function PagePage() {
                 w={{ md: "49%", base: "100%" }}
                 justifyContent="center"
               >
-                <Flex pt={{ base: "20px", sm: "23px" }} w="100%" flexDirection="column" alignItems="start">
+                <Flex pt={{ base: "20px", sm: "16px", md: "23px" }} w="100%" flexDirection="column" alignItems="start">
                   <Heading size="lg" as="h1" fontSize="54.58px" lineHeight="66px">
-                    <Heading size="lg" as="span" color="gray.900_01">
+                    <Heading  size={{ base: "sm", sm: "sm", md: 'md', lg: "lg" }} as="div" color="gray.900_01">
                       Decentralized&nbsp;
                     </Heading>
-                    <Heading size="lg" as="span" color="gray.600">
+                    <Heading size={{ base: "sm", sm: "sm", md: 'md', lg: "lg" }} as="div" color="gray.600">
                       <>
                         Taproot Assets protocol Wallet
                         <br />
@@ -367,7 +367,7 @@ export default function PagePage() {
             <Image
               src="images/img_image_2.png"
               h="420px"
-              w="100%"
+              w="100vw"
               position="absolute"
               bottom="24%"
               right="0px"
@@ -387,7 +387,7 @@ export default function PagePage() {
                 bgGradient="linear-gradient(52deg, #2d5fdf,#00cb6a)"
                 px={{ md: "64px", base: "20px" }}
               >
-                <Container maxW="1200px" w="100%" px="0px" mx="auto">
+                <Container maxW="100%" w="100%" px="0px" mx="auto">
                   <Flex
                     justifyContent="space-between"
                     alignItems="start"
@@ -416,14 +416,14 @@ export default function PagePage() {
                         </Text>
                       </Flex>
                     </Flex>
-                    <Flex pt={{ md: "102px", base: "20px" }} w={{ md: "17%", base: "100%" }} flexDirection="column">
-                      <Flex alignSelf="start" py={{ base: "20px", sm: "30px" }}>
+                    <Flex pt={{ md: "102px", base: "20px" }} w={{ md: "17%", base: "17%" }} flexDirection="column">
+                      <Flex alignSelf="start" py={{ base: "10px", sm: "30px" }}>
                         <Button
                           variant="outline"
                           colorScheme="black_900"
                           leftIcon={<Image src="images/img_contrast.png" w="30px" h="20px" />}
                           alignSelf="start"
-                          minW="170px"
+                          minW="120px"
                           borderRadius="4px"
                           px={{ base: "20px", sm: "" }}
                           onClick={() => window.open("https://twitter.com/BittapLab", "_blank")}
