@@ -365,8 +365,7 @@ export default function PagePage() {
               </Container>
             </Flex>
             <Image
-              src="images/img_image_2.png"
-              h="420px"
+              src="images/img_image_roadmap.png"
               w="100vw"
               position="absolute"
               bottom="24%"
