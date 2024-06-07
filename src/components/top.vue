@@ -1,16 +1,25 @@
 <template>
-  <div class="top">
+  <div class="top" id="top">
     <div class="wrapper">
       <nav class="l">
         <img alt="BitTap logo" class="link logo" src="@/assets/logo.png" width="90" height="25" />
-        <RouterLink class="link home" to="/">Home</RouterLink>
-        <RouterLink class="link wallet" to="/">Wallet</RouterLink>
-        <RouterLink class="link marketplace" to="/">Marketplace</RouterLink>
+        <a class="link home" href="#top">Home</a>
+        <a class="link wallet" href="#wallet">Wallet</a>
+        <a class="link marketplace" href="#market">Marketplace</a>
       </nav>
       <nav class="r">
-        <RouterLink class="link" to="/">Home</RouterLink>
-        <RouterLink class="link" to="/">Wallet</RouterLink>
-        <RouterLink class="link" to="/">Marketplace</RouterLink>
+        <a class="link" to="/">
+          <img src="/img/icon_book.png" />
+        </a>
+        <a class="link" to="/">
+          <img src="/img/icon_x.png" />
+        </a>
+        <a class="link" to="/">
+          <img src="/img/icon_github.png" />
+        </a>
+        <button class="link connect" @click="$root._tips('Coming soon', 'success')">
+          <img src="/img/icon_walet_connect.png" />
+        </button>
       </nav>
     </div>
     <div class="home-top" v-if="home">
@@ -23,11 +32,11 @@
         blockchain.”
       </div>
       <div class="actions">
-        <button class="btn wallet">
+        <button class="btn wallet" @click="$root._tips('Coming soon', 'info')">
           Open BitTap Wallet
           <span class="beta">Beta</span>
         </button>
-        <button class="btn form">Points Form</button>
+        <button @click="$root._tips('Coming soon', 'info')" class="btn form">Points Form</button>
       </div>
     </div>
   </div>
@@ -44,7 +53,7 @@ export default {
 <style lang="scss" scoped>
 .top {
   @apply w-full flex flex-col justify-between items-center;
-  background: url('/img/bg_1.png') no-repeat center bottom;
+  background: url('/img/bg_1.png') no-repeat center top;
   background-size: 100% 100%;
 
   a.link {
@@ -59,17 +68,17 @@ export default {
     @apply flex flex-row justify-between items-center gap-0;
     height: 52px;
     background: rgba(255, 255, 255, 0.03);
-    width: 80vw;
+    width: 90vw;
     .l {
-      @apply flex flex-row justify-start items-center;
+      @apply flex flex-row justify-start items-center pl-5;
       .link {
-        @apply mr-4 no-underline;
+        @apply mr-2 no-underline;
       }
     }
     .r {
       @apply flex flex-row justify-between items-center;
       .link {
-        @apply mr-4 no-underline;
+        @apply mr-2 no-underline;
       }
     }
   }
