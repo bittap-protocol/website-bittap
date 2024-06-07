@@ -8,7 +8,7 @@
     <div class="wrapper">
       <div class="copy">
         <img alt="BitTap logo" class="link logo" src="@/assets/logo.png" />
-        <div class="cp">Tabi 2024 All Rights Reserved</div>
+        <div class="cp">BitTap 2024 All Rights Reserved</div>
         <div class="icons">
           <a href="/">
             <img src="/img/icon_facebook.png" />
