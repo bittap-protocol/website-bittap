@@ -8,13 +8,13 @@
         <a class="link marketplace" href="#market">Marketplace</a>
       </nav>
       <nav class="r">
-        <a class="link" to="/">
+        <a class="link" href="/">
           <img src="/img/icon_book.png" />
         </a>
-        <a class="link" to="/">
+        <a class="link" href="/">
           <img src="/img/icon_x.png" />
         </a>
-        <a class="link" to="/">
+        <a class="link" href="https://github.com/bittap-protocol" target="blank">
           <img src="/img/icon_github.png" />
         </a>
         <button class="link connect" @click="$root._tips('Coming soon', 'success')">

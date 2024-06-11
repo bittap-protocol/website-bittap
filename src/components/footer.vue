@@ -10,7 +10,7 @@
         <img alt="BitTap logo" class="link logo" src="@/assets/logo.png" />
         <div class="cp">BitTap 2024 All Rights Reserved</div>
         <div class="icons">
-          <a href="/">
+          <!-- <a href="/">
             <img src="/img/icon_facebook.png" />
           </a>
           <a href="/">
@@ -21,24 +21,26 @@
           </a>
           <a href="/">
             <img src="/img/icon_med.png" />
-          </a>
+          </a> -->
         </div>
       </div>
       <div class="links">
         <div class="bittap">
           <div class="title">BitTap</div>
           <a href="#top" class="link">Home</a>
-          <a href="#wallet" class="link">Wallet</a>
+          <!-- <a href="#wallet" class="link">Wallet</a> -->
         </div>
         <div class="develop">
           <div class="title">Developers</div>
-          <a href="/" class="link">Docs</a>
-          <a href="/" class="link">Github</a>
+          <a href="https://doc.bittap.org/" target="blank" class="link">Docs</a>
+          <a href="https://github.com/bittap-protocol" class="link" target="blank">Github</a>
         </div>
         <div class="community">
           <div class="title">Community</div>
-          <a href="/" class="link">Twitter</a>
-          <a href="/" class="link">Discord</a>
+          <a href="https://x.com/intent/user?screen_name=BittapLab" target="blank" class="link"
+            >Twitter</a
+          >
+          <!-- <a href="/" class="link">Discord</a> -->
         </div>
       </div>
     </div>
@@ -98,7 +100,7 @@ export default {
       }
     }
     .links {
-      @apply flex flex-row justify-between items-center gap-[50px];
+      @apply flex flex-row justify-between items-start gap-[50px];
       .bittap,
       .develop,
       .community {
