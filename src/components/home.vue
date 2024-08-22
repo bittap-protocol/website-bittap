@@ -133,11 +133,12 @@
             <img src="/img/partners/lnfi.png" />
             <img src="/img/partners/gate.png" />
             <img src="/img/partners/discoco.png" />
-            <img src="/img/partners/discoco.png" />
+            <img src="/img/partners/bihelix.png" />
             <img src="/img/partners/runes.png" />
             <img src="/img/partners/trust.png" />
             <img src="/img/partners/flash.png" />
             <img src="/img/partners/tra.png" />
+            <img src="/img/partners/header_logo.f9e37ed4.svg" />
           </div>
         </div>
       </div>
@@ -158,9 +159,8 @@
                 <img src="/img/icon_1.png" />
               </div>
               <div class="des">
-                <div class="title">Q2 2024</div>
-                <div class="line"><i class="d"></i>BitTap Wallet Beta Test</div>
-                <div class="line"><i class="d"></i>BitTap Wallet Launch (June)</div>
+                <div class="title">Q3 2024</div>
+                <div class="line"><i class="d"></i>BitTap Wallet Launch</div>
               </div>
             </div>
             <div class="item">
@@ -168,7 +168,7 @@
                 <img src="/img/icon_2.png" />
               </div>
               <div class="des">
-                <div class="title">Q3 2024</div>
+                <div class="title">Q4 2024</div>
                 <div class="line"><i class="d"></i>BitTap Marketplace Launch</div>
               </div>
             </div>
@@ -177,8 +177,8 @@
                 <img src="/img/icon_3.png" />
               </div>
               <div class="des">
-                <div class="title">Q4 2024</div>
-                <div class="line"><i class="d"></i>Early Community Airdrop</div>
+                <div class="title">2025...</div>
+                <div class="line"><i class="d"></i>Building on LightningNetwork</div>
               </div>
             </div>
             <div class="item">
@@ -289,10 +289,9 @@ export default {
     .faq {
       background: url('/img/bg_home_faq.png') no-repeat center center;
       background-size: 100% 100%;
-      // width: 80vw;
+      max-width: 80vw;
       margin: 20px auto;
       padding: 40px;
-      @apply m-20;
       .title {
         @apply text-4xl;
       }
@@ -321,7 +320,8 @@ export default {
       // width: 80vw;
       background: url('/img/home_one_ ellipse.png') no-repeat left top;
       background-size: 12% auto;
-      @apply m-20;
+      max-width: 80vw;
+      margin: 20px auto;
       .f {
         @apply pl-10;
         flex: 1;
@@ -443,6 +443,10 @@ export default {
       }
       .img {
         @apply pt-20;
+        img {
+          max-height: 50vh;
+          width: auto;
+        }
       }
       .full {
         @apply my-6 border border-solid border-primary px-4 py-2 rounded-sm;
