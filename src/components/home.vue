@@ -13,7 +13,10 @@
           <div class="line">
             3. Assets can circulate on the Lightning Network, both fast and cost-effective.
           </div>
-          <a class="btn btn-link" href="###" @click="$root._tips('Coming soon', 'info')"
+          <a
+            class="btn btn-link"
+            href="https://docs.lightning.engineering/the-lightning-network/taproot-assets"
+            target="_blank"
             >More Info</a
           >
         </div>
@@ -115,7 +118,7 @@
         <button class="full" @click="fullscreen = true">Full Screen</button>
       </div>
 
-      <div class="bg">
+      <div class="bg hidden">
         <div class="rd">
           <div class="f">
             <div class="title">R&D Partner</div>
@@ -138,7 +141,6 @@
             <img src="/img/partners/trust.png" />
             <img src="/img/partners/flash.png" />
             <img src="/img/partners/tra.png" />
-            <img src="/img/partners/header_logo.f9e37ed4.svg" />
           </div>
         </div>
       </div>
