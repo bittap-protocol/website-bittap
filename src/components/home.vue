@@ -118,7 +118,7 @@
         <button class="full" @click="fullscreen = true">Full Screen</button>
       </div>
 
-      <div class="bg hidden">
+      <div class="bg">
         <div class="rd">
           <div class="f">
             <div class="title">R&D Partner</div>
@@ -475,7 +475,7 @@ export default {
       // backdrop-filter: blur(50px);
     }
     .rd {
-      @apply flex flex-col justify-center items-center px-20 mt-20 mx-auto;
+      @apply flex flex-col justify-center items-center px-20 mt-20 mx-auto hidden;
       .f {
         .title {
           @apply pt-20 text-5xl mb-10;
@@ -634,6 +634,9 @@ export default {
           width: 90%;
           @apply py-10 my-2;
         }
+      }
+      .rd {
+        @apply hidden;
       }
       .asset {
         .f {
