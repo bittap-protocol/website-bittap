@@ -13,7 +13,10 @@
           <div class="line">
             3. Assets can circulate on the Lightning Network, both fast and cost-effective.
           </div>
-          <a class="btn btn-link" href="###" @click="$root._tips('Coming soon', 'info')"
+          <a
+            class="btn btn-link"
+            href="https://docs.lightning.engineering/the-lightning-network/taproot-assets"
+            target="_blank"
             >More Info</a
           >
         </div>
@@ -38,7 +41,7 @@
             <img class="icon" src="/img/icon_plugin.png" />
             <div class="msg">Browser Plugin just like MetaMask</div>
           </div>
-          <a href="###" @click="$root._tips('Coming soon', 'info')" class="btn btn-primary btn-bg"
+          <a href="###" @click="$root._installWallet" class="btn btn-primary btn-bg"
             >Install the BitTap Wallet</a
           >
         </div>
@@ -133,7 +136,7 @@
             <img src="/img/partners/lnfi.png" />
             <img src="/img/partners/gate.png" />
             <img src="/img/partners/discoco.png" />
-            <img src="/img/partners/discoco.png" />
+            <img src="/img/partners/bihelix.png" />
             <img src="/img/partners/runes.png" />
             <img src="/img/partners/trust.png" />
             <img src="/img/partners/flash.png" />
@@ -158,9 +161,8 @@
                 <img src="/img/icon_1.png" />
               </div>
               <div class="des">
-                <div class="title">Q2 2024</div>
-                <div class="line"><i class="d"></i>BitTap Wallet Beta Test</div>
-                <div class="line"><i class="d"></i>BitTap Wallet Launch (June)</div>
+                <div class="title">Q3 2024</div>
+                <div class="line"><i class="d"></i>BitTap Wallet Launch</div>
               </div>
             </div>
             <div class="item">
@@ -168,7 +170,7 @@
                 <img src="/img/icon_2.png" />
               </div>
               <div class="des">
-                <div class="title">Q3 2024</div>
+                <div class="title">Q4 2024</div>
                 <div class="line"><i class="d"></i>BitTap Marketplace Launch</div>
               </div>
             </div>
@@ -177,8 +179,8 @@
                 <img src="/img/icon_3.png" />
               </div>
               <div class="des">
-                <div class="title">Q4 2024</div>
-                <div class="line"><i class="d"></i>Early Community Airdrop</div>
+                <div class="title">2025...</div>
+                <div class="line"><i class="d"></i>Building on LightningNetwork</div>
               </div>
             </div>
             <div class="item">
@@ -289,10 +291,9 @@ export default {
     .faq {
       background: url('/img/bg_home_faq.png') no-repeat center center;
       background-size: 100% 100%;
-      // width: 80vw;
+      max-width: 80vw;
       margin: 20px auto;
       padding: 40px;
-      @apply m-20;
       .title {
         @apply text-4xl;
       }
@@ -321,7 +322,8 @@ export default {
       // width: 80vw;
       background: url('/img/home_one_ ellipse.png') no-repeat left top;
       background-size: 12% auto;
-      @apply m-20;
+      max-width: 80vw;
+      margin: 20px auto;
       .f {
         @apply pl-10;
         flex: 1;
@@ -443,6 +445,10 @@ export default {
       }
       .img {
         @apply pt-20;
+        img {
+          max-height: 50vh;
+          width: auto;
+        }
       }
       .full {
         @apply my-6 border border-solid border-primary px-4 py-2 rounded-sm;
@@ -469,7 +475,7 @@ export default {
       // backdrop-filter: blur(50px);
     }
     .rd {
-      @apply flex flex-col justify-center items-center px-20 mt-20 mx-auto;
+      @apply flex flex-col justify-center items-center px-20 mt-20 mx-auto hidden;
       .f {
         .title {
           @apply pt-20 text-5xl mb-10;
@@ -628,6 +634,9 @@ export default {
           width: 90%;
           @apply py-10 my-2;
         }
+      }
+      .rd {
+        @apply hidden;
       }
       .asset {
         .f {

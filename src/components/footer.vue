@@ -33,11 +33,11 @@
         <div class="develop">
           <div class="title">Developers</div>
           <a href="https://doc.bittap.org/" target="blank" class="link">Docs</a>
-          <a href="https://github.com/bittap-protocol" class="link" target="blank">Github</a>
+          <a href="https://github.com/bittap-protocol" class="link" target="_blank">Github</a>
         </div>
         <div class="community">
           <div class="title">Community</div>
-          <a href="https://x.com/intent/user?screen_name=BittapLab" target="blank" class="link"
+          <a href="https://x.com/intent/user?screen_name=BittapLab" target="_blank" class="link"
             >Twitter</a
           >
           <!-- <a href="/" class="link">Discord</a> -->

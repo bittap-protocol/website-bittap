@@ -18,6 +18,11 @@ export default {
     }
   },
   methods: {
+    _installWallet() {
+      window.open(
+        'https://pf067yfqm0n.sg.larksuite.com/docx/A4uCdVoS6o1VhgxwMJQlrDNDgYb?from=from_copylink'
+      )
+    },
     _tips(msg, type = 'info', delay = 2000) {
       console.log('root._tips', { msg, type, delay })
       if (this.toast.timer) {
