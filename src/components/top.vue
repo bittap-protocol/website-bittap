@@ -17,7 +17,7 @@
         <a class="link" href="https://github.com/bittap-protocol" target="_blank">
           <img src="/img/icon_github.png" />
         </a>
-        <button class="link connect" @click="$root._tips('Coming soon', 'success')">
+        <button class="link connect" @click="$root._installWallet">
           <img src="/img/icon_walet_connect.png" />
         </button>
       </nav>
@@ -32,7 +32,7 @@
         blockchain.”
       </div>
       <div class="actions">
-        <button class="btn wallet" @click="$root._tips('Coming soon', 'info')">
+        <button class="btn wallet" @click="$root._installWallet">
           Open BitTap Wallet
           <span class="beta">Beta</span>
         </button>

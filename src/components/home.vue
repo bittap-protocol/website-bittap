@@ -41,7 +41,7 @@
             <img class="icon" src="/img/icon_plugin.png" />
             <div class="msg">Browser Plugin just like MetaMask</div>
           </div>
-          <a href="###" @click="$root._tips('Coming soon', 'info')" class="btn btn-primary btn-bg"
+          <a href="###" @click="$root._installWallet" class="btn btn-primary btn-bg"
             >Install the BitTap Wallet</a
           >
         </div>
