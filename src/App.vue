@@ -20,7 +20,7 @@ export default {
   methods: {
     _installWallet() {
       window.open(
-        'https://pf067yfqm0n.sg.larksuite.com/docx/A4uCdVoS6o1VhgxwMJQlrDNDgYb?from=from_copylink'
+        'https://chromewebstore.google.com/detail/bittap/kbnhooopfndecmegdekkoiijflnmllff'
       )
     },
     _tips(msg, type = 'info', delay = 2000) {
